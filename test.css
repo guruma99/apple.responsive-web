@@ -1,0 +1,386 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* 😁🔥🔥 ' * ' (별표)이란? 바디의 모든 것들을 지칭 */
+
+li a:hover{
+  color:dodgerblue;
+  font-size: 19px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.visually-hidden{
+    display:none;
+}
+
+nav{
+  display: flex;
+  background-color: #333;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+
+  /* align-items 란? (세로축, 중심축) 수직정렬하는 것 */
+  /* justify-content 란? (가로축, 중심축) 수평정렬하는 것 
+    🔥👀 Justify-content 속성들
+
+      flex-start (default)>>  요소들을 컨테이너의 왼쪽으로 정렬
+
+	    flex-end>> 요소들을 컨테이너의 우측으로 정렬
+
+	    center>> 요소들을 컨테이너의 중앙으로 정렬
+
+      space-between>> 요소들 사이에 동일한 간격을 둡니다.
+
+      space-around>> 요소들 주위에 동일한 간격을 둡니다.
+
+      space-evenly(FireFox Only)>> 첫번째로 오는 정렬 대상 전에 두개 의 인접한 정렬 대상 사이의 간격과
+
+     마지막 정렬 대상 이후의 간격이 같도록 항목이 분산 됩니다.*/
+}
+
+
+  /*🔥👀 align-items 속성들
+    flex-start>>컨테이너의 최상단으로 정렬 합니다.
+
+    flex-end>>컨테이너의 최하단으로 정렬합니다.
+
+    center>>컨테이너의 세로 축의 중앙으로 정렬 합니다.
+
+    baseline>>컨테이너의 시작위치에 정렬 합니다.
+
+    stretch(default)>>컨테이너의 맞게 늘립니다. */
+
+
+
+.logo img{
+  width: 40px;
+  margin-left: 20px;
+}
+
+.gnb-list{
+  width:300px;
+  display:flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+/* 🤬🔥🔥🔥🔥flex는 내가 정렬하고 싶은 아이템의 부모요소에게 주어야 작동함 */
+
+.gnb-item a{
+  font-weight: bold;
+}
+
+.background{
+  height: 700px;
+  background-image: url(./images/back.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* <😁🔥div 에 아무것도 내용없으면? 기본값이 가로 100높이0 으로 설정되어있다.
+    그래서??👉이미지 사용할때는 항상 높이를 설정해야한다.> 
+    
+    😁🔥background-position은 x축y축 이동으로 위치조절이 가능하다*/
+
+.front-txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  height:600px;
+
+
+}
+/* 🤬🔥🔥🔥🔥🔥
+flex-direction이 column이면 밑에 설정들 수직정렬로 바뀌고 row이면 가로정렬로 바뀐다 */
+
+.front-title{
+  font-size: 36px;
+}
+
+.front-content{
+  margin-top: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.front-btn{
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-weight: 700;
+  border: none;
+}
+
+.front-btn:hover{
+  background-color: dodgerblue;
+}
+
+.top{
+  margin-top: -90px;
+}
+
+.second-txt{
+  width:500px;
+  margin:0 auto;  
+  margin-bottom: 50px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #666;
+}
+
+/* 💡😁#000~#111, 222, 333 •••• 숫자가 커질수록 검정에서-그레이로 밝아진다. */
+
+.second-txt p{
+  margin-top: 30px;
+}
+
+.post-box {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.post-card {
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align: center;
+  width: 250px;
+  height: 300px;
+  color: #fff;
+  background-color: #000;
+  box-shadow: 5px 5px #000;
+  border-radius: 20px;
+  padding: 20px;
+  margin-right: 30px;
+  /* margin-bottom: 70px; */
+}
+
+.post-card:last-child {
+  margin-right: 0;
+}
+
+/* 💡👀선택자 모드!!! last-child 마지막자식부분, first-child 첫째자식부분
+ 필요부분만 따로 써서 수정이 가능 */
+
+.post-card-txt{
+  margin-top: 20px;
+}
+
+footer{
+  background-color: #333;
+  margin-top: 120px;
+  padding:20px 0;
+}
+
+.global-footer h3{
+  color: #fff;
+}
+
+.global-footer{
+  width: 90%;
+  display:flex;
+  justify-content: space-between;
+  margin-right: 40px;
+  margin: 0 auto;
+}
+
+.footer-list{
+  display: flex;
+}
+
+/* 👉👉👉👉이것도 또 하나의 방법!!
+width:200px;
+justify-content:space-between;
+border: 2px solid red;  
+footer-list에 넓이주고 justify-content를 space-between으로!! */
+
+.footer-item{
+  margin-right:20px;
+}
+
+.footer-item:last-child{
+  margin-right: 0;
+}
+
+@media screen and (max-width : 1200px){
+
+  .background{
+    height: 600px;
+  }
+
+  nav{
+    background-color: rgb(84, 17, 192);
+  }
+
+  .logo img{
+    width: 30px;
+    margin-left: 20px;
+  }
+  
+  .gnb-list{
+    width: 250px;
+    display:flex;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  .front-txt{
+    position: relative;
+    top: 200px;
+    height: 300px;
+   }
+
+  .front-content {
+    font-size: 15px;
+    text-align: center;
+  }
+  .front-title{
+    font-size: 30px;
+  }
+
+  .top{
+    margin-top: -100px;
+  }
+
+  .second-txt{
+    width:450px;
+    text-align:center;
+  }
+
+  .second-txt p{
+    font-size: 15px;
+  }
+
+  .second-txt h2{
+    font-size: 20px;
+  }
+
+  .post-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .post-card {
+    width: 400px;
+    height: 200px;
+    color: #fff;
+    box-shadow: 5px 5px #333;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .post-card:last-child {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+
+  .post-card-txt{
+    text-align: center;
+    font-size: 17px;
+  }
+
+}
+
+@media screen and (max-width : 768px){
+
+  a{
+    font-size: 15px;
+  }
+
+  nav{
+    background-color: rgb(20, 109, 199);
+  }
+  
+  .logo img{
+    width: 25px;
+    margin-left: 20px;
+  }
+  
+  .gnb-list{
+    width: 180px;
+    display:flex;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  .background{
+    height: 550px;
+  }
+
+
+  .front-txt{
+   position: relative;
+   top: 100px;
+   height: 300px;
+  }
+  
+  .front-btn{
+    padding: 10px 10px;
+    border-radius: 7px;
+    margin-bottom: 50px;
+  }
+
+  .front-content {
+    font-size: 12px;
+  }
+  .front-title{
+    font-size: 20px;
+  }
+
+  .top{
+    margin-top: -150px;
+  }
+
+  .second-txt{
+    width:320px;
+    text-align:center;
+
+  }
+
+  .second-txt p{
+    font-size: 12px;
+  }
+
+  .post-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .post-card {
+   
+    width: 300px;
+    height: 150px;
+    color: #fff;
+    box-shadow: 5px 5px #333;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  .post-card:last-child {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+
+  .post-card-txt{
+    text-align: center;
+    font-size: 12px;
+  }
+
+  
+
+}
